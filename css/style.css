@@ -90,7 +90,7 @@ section {
     align-items: center;
     padding: 0 9%;
     justify-content: space-between;
-    background: url("../images/Pradeep_k.png") no-repeat;
+    background: url('/images/Pradeep.png') no-repeat;
     background-position: right;
     margin-right:20px ;
     border-radius: 15px;  
@@ -462,10 +462,28 @@ span{
 .education-content .content  h3{
     font-size: 2rem;
 }
-.education-content .content  p{
+.education-content .content  ul{
     font-size: 1.6rem;
     padding-top: .5rem;
 }
+
+.points{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+.points li {
+    display: flex; /* Use flexbox for proper alignment */
+    align-items: flex-start; /* Align text properly */
+    margin-bottom: 8px; /* Add some space between items */
+  }
+.points li::before {
+    content: '⚡ ';
+    margin-right: 8px; /* Space between symbol and text */
+    color: #f5c518; /* Optional: Set the color of the symbol */
+    font-size:15px;
+  }
 
 .skills{
     min-height: auto;
